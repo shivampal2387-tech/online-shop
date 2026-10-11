@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ShopEasy - Online Shopping </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <header> <h1>ShopEasy 🛍️</h1>
+     <input type="text" id="search" placeholder="Search products..."> 
+     <button onclick="showCart()"> 🛒 Cart (<span id="cart-count">0</span>) </button>
+     </header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="# products">products</a>
+    <a href="# about">About</a>
+    <a href="# contact us ">Contact Us</a>
+</nav>  
+<section class="hero">
+     <h2>Welcome to ShopEasy!</h2> 
+    <p>Discover amazing products at great prices.</p>
+     <a href="#products" class="shop-btn">Shop Now</a> 
+    </section>  
+    <main id="products">
+        
+<h2>Our Products</h2>
+ <div class="product-container" id="product-list">
+     <div class="product" data-name="Mobile Phone"> 
+        <div class="product-image">📱</div> 
+     <h3>Mobile Phone</h3>
+     <p>Price: ₹15,000</p> 
+     <button onclick="addToCart('Mobile Phone', 15000)"> Add to Cart </button> 
+    </div>
+
+
+     <div class="product-container" id="product-list">
+     <div class="product" data-name="Laptop"> </div> 
+        <div class="product-image">💻</div> 
+     <h3>Laptop</h3>
+     <p>Price: ₹90,000</p> 
+     <button onclick="addToCart('Laptop', 90000)"> Add to Cart </button> 
+
+     <div class="product-container" id="product-list">
+     <div class="product" data-name="Headphone"> <div class="product-image">🎧</div> 
+     <h3>Headphone</h3>
+     <p>Price: ₹1500</p> 
+     <button onclick="addToCart('Headphone', 1500)"> Add to Cart </button> 
+
+     <div class="product-container" id="product-list">
+     <div class="product" data-name="Smartwatch"> <div class="product-image">⌚</div> 
+     <h3>Smartwatch</h3>
+     <p>Price: ₹999</p> 
+     <button onclick="addToCart('Smartwatch', 999)"> Add to Cart </button> 
+
+
+     <div class="product-container" id="product-list">
+     <div class="product" data-name="Shoes"> <div class="product-image">👞</div> 
+     <h3>Shoes</h3>
+     <p>Price: ₹1900</p> 
+     <button onclick="addToCart('Shoes', 1900)"> Add to Cart </button> 
+     </div>
+    </main>
+
+ <section id="about">
+     <h2>About Us</h2>
+      <p>ShopEasy makes online shopping simple and convenient.</p>
+     </section>   
+
+     <section id="contact us "> 
+        <h2>Contact Us</h2>
+         <p>Email: shivampal2387@gamil.com</p>
+         <p> Phone:7838937531</p>
+        </section>
+
+
+        <footer>
+            <p>
+                copy: 2026 ShopEasy. All rights reserved.
+            </p>
+        </footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
